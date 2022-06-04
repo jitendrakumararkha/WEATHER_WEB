@@ -1,0 +1,199 @@
+
+
+ @import
+ url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;1,200&display=swap');
+      h1 {
+        color: rgb(26, 4, 75);
+      }
+  
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Piazzolla",serif;
+    }
+    :root{
+        --main-bg : #1e272e;
+        --main-color : #0097e6;
+    }
+    html{
+        font-size: 69.5%;
+        
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .row{
+           margin:0;
+    }
+    .main_menu{
+        background-color: var(--main-bg);
+    }
+    .main_content{
+        background-color: rgb(147, 128, 228);
+        border-radius: 8px;
+        
+    }
+    .navbar{
+        color: #fff;
+        background-color:var(--main-bg);
+        padding: 2rem 0;
+    }
+    .p{
+        font-size: 150.5%;
+    }
+    .navbar a{
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    .navbar-toggler{
+        background-color: rgb(107, 4, 4);
+    }
+    .navbar li{
+        margin-left: 2rem;
+    }
+    .fa-snowflake{
+        transition: all linear;
+        animation: rot 2s linear infinite;
+        color: var(--main-color);
+
+    }
+    .tempinformation{
+        background-color: rgb(65,70,65);
+        height: 60%;
+        width: 200%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        border-radius: 8px;
+
+    }
+    .main_header{
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    #cityName{
+        
+        background-color: white;
+        
+        
+
+    }
+    #day ,#today_date{
+             color: white;
+             font-size: 1.5rem;
+
+    }
+     #subbtn{
+         font-size: 1.3rem;
+     }
+     .toplayer{
+         padding: 20px 20px;
+         
+     }
+    
+     #city_name ,#temp{
+        font-size: 1.5rem;
+        color:white;
+         padding: 5px 10px;
+
+    }
+    #temp_status{
+        padding: 5px 10px;
+        font-size: 2rem;
+    }
+  
+    @keyframes rot {
+        0%{
+            transform: rotate(0deg);
+
+        }
+       100%{
+            transform: rotate(360deg);
+            
+        }
+    }
+    /* main header */
+    .main_header_left{
+        height: 38rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_header_right{
+        height: 42rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_header_left .text_clr{
+        color: var(--main-color);
+    }
+    .main_header_left button{
+        border: none;
+        padding: 0.8rem  1.8rem;
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        box-shadow: 0 8px 6px -6px #000;
+        outline: none;
+    }
+    .main_header_left button:hover{
+        box-shadow: 0 8px 6px -6px  var(--main-color);
+    }
+
+    #btn{
+        border: none;
+        padding: 0.8rem  1.8rem;
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        box-shadow: 0 8px 6px -6px rgb(228, 13, 13);
+        outline: none;
+    }
+    #btn:hover{
+        box-shadow: 0 8px 6px -6px  var(--main-color);
+    }
+       /* footer style */
+       footer{
+           width: 100%;
+           background-color:var(--main-color);
+           margin-top: auto;
+       }
+       footer p{
+           margin: 0;
+           text-align: center;
+           color: #fff;
+           line-height: 5rem;
+           font-size: 1.4rem;
+
+        }
+        .w-100{
+            border-radius: 14px;
+            border-color: #e62e00;
+            border-width: 5px;
+            opacity: .83;
+        }
+        @media(max-widh:768px){
+            .main_header_left{
+                height: auto;
+                margin: 4rem;
+            }
+        }
+        @media(max-widh:768px){
+            .main_header_right{
+                height: auto;
+                margin-top: 4rem;
+            }
+        }
+        .main_header_right figure img{
+            filter: drop-shadow(0  0.5rem  1rem rgb(0,0,0,0.3));
+        }
+
